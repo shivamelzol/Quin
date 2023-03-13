@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "86263777147",
+    "firebase_url": "https://quinstories-7c423-default-rtdb.firebaseio.com",
+    "project_id": "quinstories-7c423",
+    "storage_bucket": "quinstories-7c423.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86263777147:android:8669cf893a43bc48f59fde",
+        "android_client_info": {
+          "package_name": "com.example.quinstories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86263777147-4iq8rg2vrckcdstcsdkogpq0naq6qpl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZH71yA8NBl6cVRywOWbJngw-1fISw1Kw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86263777147-4iq8rg2vrckcdstcsdkogpq0naq6qpl8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
