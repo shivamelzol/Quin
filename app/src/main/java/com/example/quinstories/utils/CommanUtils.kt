@@ -1,12 +1,11 @@
-package co.ltd.raina.vhn.driver.utils
+package com.example.quinstories.utils
 
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
 import androidx.annotation.RequiresApi
-import co.ltd.raina.vhn.driver.model.LoginResponse
-import co.ltd.raina.vhn.driver.model.UserDetails
+import com.example.quinstories.model.User
 import com.google.gson.Gson
 
 object CommanUtils {
@@ -38,7 +37,7 @@ object CommanUtils {
         Context.MODE_PRIVATE
     ).getBoolean("isLogin", false)
 
-    fun storeUser(context: Context, user: UserDetails) {
+    fun storeUser(context: Context, user: User) {
         val login = context.getSharedPreferences("user", Context.MODE_PRIVATE).edit()
         val gson = Gson()
         val json = gson.toJson(user)
@@ -46,13 +45,13 @@ object CommanUtils {
         login.apply()
     }
 
-    fun getUser(context: Context): UserDetails {
+    fun getUser(context: Context): User{
         val gson = Gson()
         val json = context.getSharedPreferences("user", Context.MODE_PRIVATE).getString(
             "user",
             ""
         )
-        val obj: UserDetails = gson.fromJson(json, UserDetails::class.java)
+        val obj: User = gson.fromJson(json, User::class.java)
         return obj
     }
 }
